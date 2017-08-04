@@ -1,0 +1,3 @@
+{
+    "name": "MovieDB", "version": "1.0.0", "keywords": ["util", "functional", "server", "client", "browser"], "author": "Marcin Tchórz <marcin.tchorz@thedigitalcompany.pl>", "contributors": [], "dependencies": {}
+}
