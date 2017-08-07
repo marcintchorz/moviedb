@@ -18,8 +18,10 @@ $(document).ready(function () {
                             label: item.original_title,
                             value: item.id
                         };
-
                     }));
+                },
+                fail: function (data) {
+                    alert("Try again!");
                 }
 
             });
@@ -27,7 +29,6 @@ $(document).ready(function () {
         select: function (event, ui) {
             $('#hiddenField').val(ui.item.value);
             this.value = ui.item.label;
-
             return false;
         },
         minlenght: 1,
@@ -53,7 +54,9 @@ $(document).ready(function () {
                 }
                 $('#check').attr('href', 'https://www.themoviedb.org/movie/'+data.id+'/');
                 $('#movie').show();
-
+            },
+            fail: function (data) {
+                alert("Try again!");
             }
 
         });
